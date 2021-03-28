@@ -1,14 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F8Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./fontawesome-free-5.15.3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--separate">
+                Vào cửa hàng trên ứng dụng F8-Shop
+              </li>
+              <li class="header__navbar-item">
+                Kết nối
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fas fa-bell"></i>
+                  Thông báo
+                </a>
+                <div class="header__notify">
+                  <header class="header-notify__header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <ul class="header-notify__list">
+                    <li class="header-notify__item">
+                      <a href="" class="header-notify-item-link">
+                        <img
+                          src="https://abaha.vn/photos/resized/850x500/83-1589892101-myphamohui-lgvina.png"
+                          alt=""
+                          class="header-notify-item__img"
+                        />
+                        <div class="header-notify-item-info">
+                          <div class="header-notify-item-info__name">
+                            Mỹ phẩm Ohui chính hãng
+                          </div>
+                          <div class="header-notify-item-info__description">
+                            Là loại mỹ phẩm số 1 Việt Nam
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header-notify__item">
+                      <a href="" class="header-notify-item-link">
+                        <img
+                          src="https://abaha.vn/photos/resized/850x500/83-1589892101-myphamohui-lgvina.png"
+                          alt=""
+                          class="header-notify-item__img"
+                        />
+                        <div class="header-notify-item-info">
+                          <div class="header-notify-item-info__name">
+                            Mỹ phẩm Ohui2 chính hãng
+                          </div>
+                          <div class="header-notify-item-info__description">
+                            Là loại mỹ phẩm số 2 Việt Nam
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header-notify__item header-notify__item--viewed">
+                      <a href="" class="header-notify-item-link">
+                        <img
+                          src="https://abaha.vn/photos/resized/850x500/83-1589892101-myphamohui-lgvina.png"
+                          alt=""
+                          class="header-notify-item__img"
+                        />
+                        <div class="header-notify-item-info">
+                          <div class="header-notify-item-info__name">
+                            Mỹ phẩm Ohui3 chính hãng
+                          </div>
+                          <div class="header-notify-item-info__description">
+                            Là loại mỹ phẩm số 3 Việt Nam
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link"> Trợ giúp </a>
+              </li>
+              <li
+                class="header__navbar-item header__navbar-item--bold header__navbar-item--separate"
+              >
+                Đăng ký
+              </li>
+              <li class="header__navbar-item header__navbar-item--bold">
+                Đăng nhập
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container"></div>
+      <div class="footer"></div>
+    </div>
+
+    <!-- modal layout -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+            <!-- Authen form -->
+            <div class="auth-form">
+              <div class="auth-form__container">
+                <div class="auth-form__header">
+                  <h3 class="auth-form__heading">Đăng ký</h3>
+                  <span class="auth-form__switch-btn">Đăng nhập</span>
+                </div>
+                <div class="auth-form__form">
+                  <div class="auth-form__group">
+                    <input type="text" class="auth-form__input" placeholder="Email của bạn"></input>
+                  </div>
+                  <div class="auth-form__group">
+                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn"></input>
+                  </div>
+                  <div class="auth-form__group">
+                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn"></input>
+                  </div>
+                </div>
+                <div class="auth-form__aside">
+                  <p class="auth-form__policy-text">
+                    Bằng việc đăng ký bạn đã đồng ý với Ohui về
+                    <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                    <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                  </p>
+                </div>
+                <div class="auth-form__controls">
+                  <button class="btn auth-form__controls--back">Trở lại</button>
+                  <button class="btn btn--primary">Đăng ký</button>
+                </div>
+              </div>
     
-</body>
+              <div  class="auth-form__socials">
+                <a href="" class="btn btn--size-s auth-form__soials--facebook">
+                  <i class="fab fa-facebook-square auth-form-social__icon" style="margin-right: 4px; padding-left: 4px;"></i>
+                  Kết nối với facabook
+                </a>
+                <a href="" class="btn btn--size-s auth-form__soials--google" >
+                  <i class="fab fa-google auth-form-social__icon" style="margin-right: 4px; padding-left: 4px;"></i>
+                  Kết nối với Google
+                </a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
 </html>
