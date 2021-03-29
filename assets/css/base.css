@@ -18,6 +18,8 @@ html {
   box-sizing: border-box;
 }
 
+/* responsive */
+
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -33,6 +35,29 @@ html {
   flex: wrap;
 }
 
+.grid__column {}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
 /* modal */
 .modal {
   position: fixed;
@@ -41,6 +66,7 @@ html {
   bottom: 0;
   left: 0;
   display: flex;
+  animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -51,9 +77,12 @@ html {
 }
 
 .modal__body {
+  --growth-from: 0.7;
+  --growth-to: 1;
   margin: auto;
   z-index: 1;
   position: relative;
+  animation: growth linear 0.1s;
 }
 
 /* button style */
